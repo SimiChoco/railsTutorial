@@ -3,6 +3,7 @@ require "test_helper"
 class WeightHistoriesControllerTest < ActionDispatch::IntegrationTest
   setup do
     @weight_history = weight_histories(:one)
+    sign_in users(:one)
   end
 
   test "should get index" do
